@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment-5 | DOM Challenges III</title>
+</head>
+
+<body>
+    <h1 class="first-part">Student: Pjerind Zefi <br>TTP Program <br>Click the buttons to create or delete the row's or
+        column's from the table <br>
+        Place your mouse over the picture for a larger one</h1>
+    <div class="second-part">
+
+        <!-- here you can add a row to the table -->
+        <button onclick="appendRow()">Add a Row</button>
+
+        <!-- here you can add a column to the table -->
+        <button onclick="appendColumn()">Add Column</button>
+
+        <!-- here i can delete a row from the table -->
+        <button onclick="deleteRow()">Delete Row</button>
+
+        <!-- here you can delete a column from the table -->
+        <button onclick="deleteColumn()">Delele Column</button>
+
+        <!-- fill all uncolored cells with the selected color -->
+        <button onclick="fillNonColored()">Fill uncolored</button>
+
+        <!-- fill all cells with the selected color -->
+        <button onclick="fillAllColor()">Fill All</button>
+
+        <!-- clear all cells and restore to all original colors -->
+        <button onclick="clearAll()">Clear All</button>
+
+        <!-- here is a dropdown menu of colors -->
+        <select id="color-select" onchange="selectedColor(this.value)">
+            <option value="" selected disabled hidden>Select Color:</option>
+            <option value="#70d4ab">Light Green</option>
+            <option value="#e44e34">Tomatoe</option>
+            <option value="#d146a7">Pink</option>
+            <option value="#9441c4">Levander</option>
+            <option value="#171ab1">Blue</option>
+            <option value="#8d0505">Red</option>
+        </select>
+        <table id="myTable">
+            <tr>
+                <td></td>
+                <br>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- for my picture to change the size -->
+    <div class="third-part">
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/me.jpg" alt="me" class="me">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

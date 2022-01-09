@@ -1,0 +1,39 @@
+body {
+    border: 5px solid;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.first-part,
+.second-part,
+.third-part {
+    background-color: antiquewhite;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 30px;
+    text-align: center;
+    color: #8b005d;
+    margin: 20px;
+    padding: 10px;
+}
+
+td {
+    border: 0.5em solid rgb(169, 182, 175);
+    height: 150px;
+    width: 200px;
+    background-color: #8b005d;
+}
+
+button,
+select {
+    height: 75px;
+    width: 150px;
+    background-color: rgb(169, 182, 182);
+    border-radius: 25%;
+}
+
+.me {
+    margin: 10px;
+    height: 64px;
+    width: 64px;
+}
